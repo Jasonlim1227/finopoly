@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Money Magic Retro Stage Palette -->
+    <color name="stage_amber">#C98838</color>
+    <color name="stage_amber_dark">#B27329</color>
+    <color name="stage_amber_light">#D58C36</color>
+    <color name="magic_teal">#1D8B8B</color>
+    <color name="magic_teal_dark">#136161</color>
+    <color name="parchment_cream">#FAF3DF</color>
+    <color name="parchment_cream_light">#FFFDF5</color>
+    <color name="espresso_outline">#241C15</color>
+    <color name="magic_purple">#5E2378</color>
+    <color name="magic_gold">#E5A853</color>
+    <color name="magic_coral">#C62828</color>
+
+    <!-- Financial Mappings -->
+    <color name="primary_emerald">#1D8B8B</color>
+    <color name="primary_dark">#136161</color>
+    <color name="primary_light">#FAF3DF</color>
+    <color name="accent_gold">#E5A853</color>
+    <color name="gold_light">#FFF3E0</color>
+
+    <!-- Status & Finance Colors -->
+    <color name="finance_green">#2E7D32</color>
+    <color name="finance_green_light">#E8F5E9</color>
+    <color name="finance_red">#C62828</color>
+    <color name="finance_red_light">#FFEBEE</color>
+    <color name="finance_blue">#1D8B8B</color>
+    <color name="finance_purple">#5E2378</color>
+
+    <!-- Category Colors (Money Magic Tiles) -->
+    <color name="cat_food">#D58C36</color>
+    <color name="cat_transport">#1D8B8B</color>
+    <color name="cat_rent">#5E2378</color>
+    <color name="cat_bills">#C62828</color>
+    <color name="cat_education">#283593</color>
+    <color name="cat_savings">#2E7D32</color>
+    <color name="cat_entertainment">#AD1457</color>
+    <color name="cat_scenario">#E5A853</color>
+    <color name="cat_start">#E5A853</color>
+
+    <!-- UI Elements -->
+    <color name="board_bg">#C98838</color>
+    <color name="board_center_bg">#B27329</color>
+    <color name="board_border">#241C15</color>
+    <color name="card_bg">#FAF3DF</color>
+    <color name="text_primary">#241C15</color>
+    <color name="text_secondary">#554433</color>
+    <color name="divider">#D8C9B0</color>
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Finopoly</string>
+
+    <!-- Login -->
+    <string name="login_title">FINOPOLY</string>
+    <string name="login_subtitle">Personal Finance Management Game</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="btn_login">Login to Game</string>
+    <string name="invalid_login">Invalid login, please try again.</string>
+
+    <!-- Main Menu -->
+    <string name="menu_title">Main Menu</string>
+    <string name="btn_start_game">Start Game</string>
+    <string name="btn_how_to_play">How to Play</string>
+    <string name="btn_my_budget">My Budget</string>
+    <string name="btn_my_score">My Score &amp; History</string>
+    <string name="btn_exit">Exit</string>
+
+    <!-- Game HUD -->
+    <string name="label_income">Monthly Income: RM %1$d</string>
+    <string name="label_money">Money: RM %1$d</string>
+    <string name="label_savings">Savings: RM %1$d</string>
+    <string name="label_expenses">Expenses: RM %1$d</string>
+    <string name="label_score">Score: %1$d</string>
+    <string name="btn_roll_dice">ROLL DICE</string>
+    <string name="label_turn">Turn: %1$d / %2$d</string>
+
+    <!-- Result -->
+    <string name="result_title">Game Results</string>
+    <string name="btn_play_again">Play Again</string>
+    <string name="btn_main_menu">Main Menu</string>
+</resources>

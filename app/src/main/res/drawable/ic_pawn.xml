@@ -1,0 +1,74 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <!-- Magician Teal Cape -->
+  <path
+      android:fillColor="#1D8B8B"
+      android:pathData="M12,24 C8,28 8,42 12,46 L36,46 C40,42 40,28 36,24 Z"/>
+  <path
+      android:fillColor="#241C15"
+      android:strokeColor="#241C15"
+      android:strokeWidth="1"
+      android:pathData="M12,24 C8,28 8,42 12,46 L36,46 C40,42 40,28 36,24 Z"/>
+  <path
+      android:fillColor="#136161"
+      android:pathData="M13.5,25 C10,29 10,41 13.5,45 L34.5,45 C38,41 38,29 34.5,25 Z"/>
+
+  <!-- Tuxedo Jacket (Black with espresso outline) -->
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M16,24 L32,24 L30,44 L18,44 Z"/>
+
+  <!-- White Shirt & Collar -->
+  <path
+      android:fillColor="#FAF3DF"
+      android:pathData="M21,24 L27,24 L25,36 L23,36 Z"/>
+
+  <!-- Teal Bowtie & Gold Coin Medal -->
+  <path
+      android:fillColor="#1D8B8B"
+      android:pathData="M21,24.5 L27,24.5 L25,27 L23,27 Z"/>
+  <path
+      android:fillColor="#E5A853"
+      android:pathData="M24,28.5m-1.8,0a1.8,1.8 0 1,0 3.6,0a1.8,1.8 0 1,0 -3.6,0"/>
+
+  <!-- White Face (Parchment Cream with Espresso Outline) -->
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M24,14m-9,0a9,9 0 1,0 18,0a9,9 0 1,0 -18,0"/>
+  <path
+      android:fillColor="#FAF3DF"
+      android:pathData="M24,14m-7.8,0a7.8,7.8 0 1,0 15.6,0a7.8,7.8 0 1,0 -15.6,0"/>
+
+  <!-- Retro Eyes & Mustache -->
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M20,13m-1.5,0a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0"/>
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M28,13m-1.5,0a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0"/>
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M20.5,16 C22,17.5 26,17.5 27.5,16 L26,18 C24,19 22,19 20,18 Z"/>
+
+  <!-- Top Hat (Black with Teal Band & Gold Coin) -->
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M14,8.5 L34,8.5 L32,10 L16,10 Z"/>
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M17,1.5 L31,1.5 L30,9 L18,9 Z"/>
+  <path
+      android:fillColor="#1D8B8B"
+      android:pathData="M17.8,6.5 L30.2,6.5 L30,8.5 L18,8.5 Z"/>
+
+  <!-- Magic Wand held in hand -->
+  <path
+      android:fillColor="#241C15"
+      android:pathData="M33,26 L41,12 L42.5,13 L34.5,27 Z"/>
+  <path
+      android:fillColor="#FAF3DF"
+      android:pathData="M39.5,14.5 L41,12 L42.5,13 L41,15.5 Z"/>
+</vector>

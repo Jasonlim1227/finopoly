@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/stage_amber"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvResultHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/result_title"
+            android:textColor="@color/parchment_cream"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Card 1: Performance Rank & Final Score -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPerformance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/parchment_cream"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/espresso_outline"
+            app:strokeWidth="3dp"
+            app:layout_constraintTop_toBottomOf="@id/tvResultHeader">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <ImageView
+                    android:id="@+id/ivBadge"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:contentDescription="Performance Badge"
+                    android:src="@drawable/ic_trophy"
+                    app:tint="@color/magic_teal" />
+
+                <TextView
+                    android:id="@+id/tvPerformanceRank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Excellent Budget Manager!"
+                    android:textColor="@color/magic_teal"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvFinalScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_magic_button_teal"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="6dp"
+                    android:text="Final Score: 120 pts"
+                    android:textColor="@color/parchment_cream"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card 2: Financial Summary Card (WHITE Background) -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBreakdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/espresso_outline"
+            app:strokeWidth="3dp"
+            app:layout_constraintTop_toBottomOf="@id/cardPerformance">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Financial Summary"
+                    android:textColor="@color/magic_teal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!-- Remaining Money -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:contentDescription="Money Icon"
+                        android:src="@drawable/ic_money"
+                        app:tint="@color/magic_teal" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:text="Remaining Money:"
+                        android:textColor="@color/espresso_outline"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvRemainingMoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RM 1,200"
+                        android:textColor="@color/magic_teal"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@color/divider" />
+
+                <!-- Total Savings -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:contentDescription="Savings Icon"
+                        android:src="@drawable/ic_savings"
+                        app:tint="@color/finance_green" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Savings:"
+                            android:textColor="@color/espresso_outline"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvSavingsBonusDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Base RM 500 (+25% Score Bonus)"
+                            android:textColor="@color/finance_green"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTotalSavings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RM 625"
+                        android:textColor="@color/finance_green"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginVertical="12dp"
+                    android:background="@color/divider" />
+
+                <!-- Total Expenses -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:contentDescription="Expenses Icon"
+                        android:src="@drawable/ic_expense"
+                        app:tint="@color/finance_red" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:layout_weight="1"
+                        android:text="Total Expenses:"
+                        android:textColor="@color/espresso_outline"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvTotalExpenses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RM 800"
+                        android:textColor="@color/finance_red"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPlayAgain"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/magic_teal"
+            android:text="@string/btn_play_again"
+            android:textColor="@color/parchment_cream"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="14dp"
+            app:strokeColor="@color/espresso_outline"
+            app:strokeWidth="3dp"
+            app:layout_constraintTop_toBottomOf="@id/cardBreakdown" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMyScore"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/parchment_cream"
+            android:drawableStart="@drawable/ic_star_score"
+            android:drawableTint="@color/espresso_outline"
+            android:paddingStart="24dp"
+            android:text="My Score &amp; History"
+            android:textColor="@color/espresso_outline"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="14dp"
+            app:strokeColor="@color/espresso_outline"
+            app:strokeWidth="3dp"
+            app:layout_constraintTop_toBottomOf="@id/btnPlayAgain" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMainMenu"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/parchment_cream"
+            android:text="@string/btn_main_menu"
+            android:textColor="@color/espresso_outline"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="14dp"
+            app:strokeColor="@color/espresso_outline"
+            app:strokeWidth="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnMyScore" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
